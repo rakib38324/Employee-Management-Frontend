@@ -16,7 +16,7 @@ const MobileNav = () => {
 
   const navbar = [
     { label: "Home", link: "/" },
-    { label: "Task", link: "/tasks" },
+    { label: "Dashboard", link: "/dashboard" },
   ];
 
   // 1) Read token on mount and on route change (helps after redirects)

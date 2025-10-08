@@ -1,36 +1,7 @@
 "use client";
-import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function HomeComponent() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const faqs = [
-    {
-      q: "Is it free to use?",
-      a: "Yes! Our free plan includes all the essential features for personal task management without any time limit.",
-    },
-    {
-      q: "Can I access my tasks offline?",
-      a: "Currently, you need an internet connection to sync your tasks. However, offline mode is on our roadmap.",
-    },
-    {
-      q: "Can I use it on mobile devices?",
-      a: "Yes, our app is fully responsive and works seamlessly on mobile, tablet, and desktop browsers.",
-    },
-    {
-      q: "Do I need to collaborate with others?",
-      a: "No. This task manager is designed specifically for individuals who want to stay organized without complex team features.",
-    },
-    {
-      q: "Are there any premium features?",
-      a: "Yes, advanced features such as custom themes, unlimited task history, and priority reminders are available in our Pro plan.",
-    },
-  ];
-
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  
 
   return (
     <div className=" bg-gray-50">
